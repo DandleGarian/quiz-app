@@ -96,6 +96,57 @@ h2 {
     cursor: pointer;
 }
 
+.answer-choice.incorrect-answer {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    border-color: red !important;
+}
+
+.answer-choice.incorrect-answer > .answer-btn {
+    background-color: red !important;
+}
+
+.answer-choice.incorrect-answer > .answer-text {
+    color: red !important;
+}
+
+.answer-choice.correct-answer {
+    animation: grow 1.3s cubic-bezier(.36,.07,.19,.97);
+}
+
+.answer-choice.correct-answer > .answer-btn {
+    background-color: blue !important;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
 .answer-choice:hover {
     border-color: green;
 }
