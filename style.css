@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e1e1;
+    background-image: linear-gradient(315deg, #e1e1e1 0%, #C0c0c0 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hud {
+    background-color: #e1e1e1;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    color: #000;
+    border: 3px solid #000;
+    position: fixed;
+    top: 20px;
+    width: 600px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hud-item {
+    padding: 5px 5px 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 40px;
+    border: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+.progress-bar-filler {
+    background-color: #000;
+    height: 34px;
+    width: 0%;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score span {
+    font-size: 50px;
+}
+
+.quiz-container {
+    background-color: #e1e1e1;
+    color: #000;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.quiz-header {
+    padding: 1.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.answer-choice {
+    position: relative;
+    border: 1px solid #000;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.answer-choice:hover {
+    border-color: green;
+}
+
+.answer-choice:hover > .answer-btn {
+    background-color: green;
+}
+
+.answer-choice:hover > .answer-text {
+    color: green;
+}
+
+.answer-btn {
+    height: 100%;
+    width: 70px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.answer-text {
+    padding-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
