@@ -103,6 +103,7 @@ h2 {
 
 .answer-choice.incorrect-answer > .answer-btn {
     background-color: red !important;
+    border: none !important;
 }
 
 .answer-choice.incorrect-answer > .answer-text {
@@ -114,7 +115,17 @@ h2 {
 }
 
 .answer-choice.correct-answer > .answer-btn {
-    background-color: blue !important;
+    background-color: green !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.answer-choice.correct-answer {
+    border-color: green !important;
+}
+
+.answer-choice.correct-answer > .answer-text {
+    color: green !important;
 }
 
 @keyframes shake {
@@ -140,7 +151,7 @@ h2 {
         transform: scale(1)
     }
     50% {
-        transform: scale(1.2)
+        transform: scale(1.1)
     }
     100% {
         transform: scale(1)
@@ -148,15 +159,17 @@ h2 {
 }
 
 .answer-choice:hover {
-    border-color: green;
+    border: 2px solid black;
 }
 
 .answer-choice:hover > .answer-btn {
-    background-color: green;
+    background-color: #fff;
+    color: #000;
+    border-right: 2px solid black;
 }
 
 .answer-choice:hover > .answer-text {
-    color: green;
+    font-weight: bold;
 }
 
 .answer-btn {
